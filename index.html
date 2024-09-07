@@ -3,67 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Landing Page</title>
+    <title>BJJ Academy</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="header">
-      <nav>
-        <img src="" alt="Header Logo" />
-        <ul>
-          <li><a href=""></a>header link one</li>
-          <li><a href=""></a>header link two</li>
-          <li><a href=""></a>header link three</li>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">BJJ Life Art</div>
+        <ul class="nav">
+          <li><a href="#">Academy</a></li>
+          <li><a href="#">Timetable</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
-      <header>
-        <h1>This website is awesome</h1>
-        <p>
-          This website has some subtext that goes here under the main title.
-          It's a smaller font and the color is lower contrast
-        </p>
-        <button>Sign up</button>
-        <div class="header-img">
-          <img src="" alt="" />this is a placeholder for an image
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>This website is awesome</h1>
+          <p>
+            This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast.
+          </p>
+          <button>Sign up</button>
         </div>
-      </header>
-    </div>
+        <img src="./images/bjj.jpg" alt="Brazilian Jiu-Jitsu photo" />
+      </div>
+    </header>
+
     <section class="cards">
-      <h2>Some random information.</h2>
-      <div class="card">
-        <img src="" alt="" />
-        <p>this is some subtext under an illustration or image</p>
-      </div>
-      <div class="card">
-        <img src="" alt="" />
-        <p>this is some subtext under an illustration or image</p>
-      </div>
-      <div class="card">
-        <img src="" alt="" />
-        <p>this is some subtext under an illustration or image</p>
-      </div>
-      <div class="card">
-        <img src="" alt="" />
-        <p>this is some subtext under an illustration or image</p>
+      <div class="container">
+        <h2>Some random information.</h2>
+        <div class="card">
+          <div class="box"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card">
+          <div class="box"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card">
+          <div class="box"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card">
+          <div class="box"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
       </div>
     </section>
     <section class="quote">
-      <blockquote>
-        <p>
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-        </p>
-      </blockquote>
-      <p>-Thor, God of Thunder</p>
-    </section>
-    <section class="banner-container">
-      <div class="banner">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
+      <div class="container">
+        <blockquote>
+          <p>
+            Always Assume that your opponent is going to be bigger, stronger,
+            and faster than you. So, you have to learn to rely on technique,
+            timing, and leverage rather than brute strength.
+          </p>
+        </blockquote>
+        <p>-Helio Gracie</p>
       </div>
-      <button>Sign up</button>
     </section>
-    <footer><p>Copyright &#169; The Odin Project 2024</p></footer>
+    <section class="cta">
+      <div class="container">
+        <div>
+          <h2>Call to action! It's time!</h2>
+          <p>
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <button>Sign up</button>
+      </div>
+    </section>
+    <footer class="footer">Copyright &copy; The Odin Project 2024</footer>
   </body>
 </html>
