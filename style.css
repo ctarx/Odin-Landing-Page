@@ -99,3 +99,38 @@ ul {
   background-color: #e5e7eb;
   color: #3882f6;
 }
+
+.cards .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.cards h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+.card p {
+  text-align: center;
+  padding-top: 5px;
+  color: darkslategray;
+}
+
+.card {
+  width: 150px;
+}
+
+.box {
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  height: 150px;
+}
