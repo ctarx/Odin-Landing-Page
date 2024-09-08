@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,11 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
 img {
   max-width: 100%;
-  border: 1px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
 }
 
 ul {
@@ -24,19 +27,25 @@ ul {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 50px;
 }
 
 .navbar,
-.header {
+.header,
+.footer {
   background-color: #1f2937;
-  padding: 20px 0;
+}
+
+.header,
+.cards,
+.quote,
+.cta {
+  padding: 18px 0;
 }
 
 .navbar a {
   text-decoration: none;
   color: #e5e7eb;
-  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -74,11 +83,6 @@ ul {
   margin-bottom: 10px;
 }
 
-.header p {
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
 .header img {
   max-width: 500px;
 }
@@ -104,13 +108,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 38px;
 }
 
 .cards-wrapper {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  gap: 40px;
 }
 
 .cards h2 {
@@ -121,16 +124,55 @@ ul {
 
 .card p {
   text-align: center;
-  padding-top: 5px;
+  padding-top: 16px;
   color: darkslategray;
 }
 
 .card {
-  width: 150px;
+  width: 220px;
 }
 
 .box {
-  border: 2px solid #3882f6;
-  border-radius: 10px;
-  height: 150px;
+  height: 200px;
+  width: 100%;
+}
+
+.box img {
+  width: auto; /* Keep image aspect ratio */
+  height: 100%; /* Fill box height */
+  border: 3px solid #1f2937;
+  object-fit: cover; /* Fill box, crop if needed */
+}
+.quote {
+  background-color: #e5e7eb;
+  padding: 30px 0;
+}
+
+.quote .container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #1f2937;
+}
+
+.quote q {
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.quote .author {
+  font-weight: 700;
+  align-self: flex-end;
+  margin-right: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
