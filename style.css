@@ -78,12 +78,18 @@ button {
 .nav {
   display: flex;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .header .container {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.header > div {
+  flex: 1 1 60%;
+  min-width: 300px;
 }
 
 .header h1 {
@@ -94,7 +100,9 @@ button {
 }
 
 .header img {
-  max-width: 500px;
+  max-width: 50%;
+  height: auto;
+  flex: 0 1 40%;
 }
 
 .header button {
@@ -116,7 +124,9 @@ button {
 
 .cards-wrapper {
   display: flex;
+  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .cards h2 {
